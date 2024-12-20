@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora el Mundo del Manga</title>
+
+    <!-- Cargar temas y estilos de PrimeNG -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/primeng@15.2.0/resources/themes/lara-light-indigo/theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/primeng@15.2.0/resources/primeng.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/primeicons@6.0.0/primeicons.css">
+
+    <!-- Estilos personalizados para manga -->
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #0022ff, #81338f);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #000000;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: justify;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .p-card {
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .p-card img {
+            border-radius: 10px 10px 0 0;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .p-button {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+        }
+
+        .carousel-container {
+            margin-top: 50px;
+        }
+
+        .carousel-item img {
+            border-radius: 15px;
+            width: 100%;
+            height: auto;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 30px auto;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Musica</h1>
+    </header><br><br>
+
+    <div class="content">
+        <h2 class="section-title">Inpirate y Descubre la Musica</h2>
+        <p>La música es un viaje sin mapa, donde cada acorde te lleva a un rincón desconocido de tu alma, revelando emociones ocultas, historias no contadas y una conexión única con el mundo que te rodea. 🎶</p><br><br>
+        <header>
+            <h1>Historia</h1>
+        </header>
+        <p>La historia de la música abarca miles de años de evolución, desde los primeros sonidos prehistóricos creados con instrumentos rudimentarios hasta la música contemporánea. En la antigüedad, la música estaba vinculada principalmente a rituales y ceremonias religiosas, mientras que durante la Edad Media y el Renacimiento, la música se desarrolló con mayor complejidad, con la aparición de la polifonía y la música instrumental. El Barroco y el Clasicismo trajeron formas más estructuradas, mientras que el Romanticismo enfatizó la expresión emocional. En el siglo XX, la música se diversificó enormemente con géneros como el jazz, el rock y la música electrónica, gracias también a los avances tecnológicos en la producción y distribución.</p>
+    </div>
+    <header>
+        <h1>TIPO DE MÚSICA</h1>
+    </header>
+
+    <div class="card-container">
+        <!-- Card 1: Historia del Manga -->
+        <p-card header="Pop" subheader="El pop se representa con melodías pegajosas y ritmos vibrantes." [style]="{ width: '300px' }">
+            <ng-template pTemplate="header">
+                <img alt="Pop" src="https://wallpapers.com/images/hd/pop-music-xkz66abpbo7819gh.jpg" />
+            </ng-template>
+            <p class="texto">
+                Es un género que crea diversos estilos musicales y un amplio público. Se caracteriza por melodías pegajosas, ritmos contagiosos y estructuras de canciones simples. A menudo fusiona elementos de géneros como el rock, el dance, el R&B y la música electrónica, lo que le otorga una gran versatilidad. Su capacidad para conectar con las emociones y la facilidad de sus letras hacen del pop una de las formas musicales más populares y queridas en todo el mundo.
+            </p>
+            <ng-template pTemplate="footer">
+                <div class="flex justify-content-center align-items-center mt-1" style="height: 80px">
+                    <p-button label="Leer Más" severity="info" />
+                </div>
+            </ng-template>
+        </p-card>
+
+        <!-- Card 2: Géneros del Manga -->
+        <p-card header="Rock" subheader="El rock es energía, guitarras fuertes y actitud rebelde." [style]="{ width: '300px' }">
+            <ng-template pTemplate="header">
+                <img alt="Rock" src="https://img.freepik.com/free-vector/hand-drawn-world-rock-day-background_23-2149445205.jpg" />
+            </ng-template>
+            <p class="texto">
+                El rock es un género musical que se caracteriza por el uso prominente de guitarras eléctricas, baterías enérgicas y una actitud rebelde. Su sonido varía desde baladas suaves hasta composiciones más pesadas y agresivas. Las letras del rock a menudo abordan temas como la libertad, la protesta, las emociones intensas y la vida cotidiana, lo que le da una fuerte conexión con la individualidad y la expresión personal.
+            </p>
+            <ng-template pTemplate="footer">
+                <div class="flex justify-content-center align-items-center mt-1" style="height: 80px">
+                    <p-button label="Descubrir Géneros" severity="info" />
+                </div>
+            </ng-template>
+        </p-card>
+
+        <!-- Card 3: El Impacto Global del Manga -->
+        <p-card header="Electronica" subheader="La música electrónica es ritmo digital, donde el sonido se convierte en energía." [style]="{ width: '300px' }">
+            <ng-template pTemplate="header">
+                <img alt="Electronica" src="https://i.ytimg.com/vi/zrWBh6w0ebg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCqanEkDb2CSS3Bz4XthHBPfHT9XA" />
+            </ng-template>
+            <p class="texto">
+                Es un género basado en sonidos creados mediante tecnología y sintetizadores. Se caracteriza por sus ritmos repetitivos, bajos profundos y la creación de ambientes sonoros que invitan al baile o la reflexión. Suele utilizarse en clubes y festivales, y sus subgéneros varían desde el house y techno hasta el trance y dubstep, ofreciendo una experiencia auditiva intensa y envolvente.
+            </p>
+            <ng-template pTemplate="footer">
+                <div class="flex justify-content-center align-items-center mt-1" style="height: 80px">
+                    <p-button label="Ver Más" severity="info" />
+                </div>
+            </ng-template>
+        </p-card>
+    </div>
+    
+    
+
+<div>
+    <header>
+        <h1>MÚSICA</h1>
+    </header>
+    <div class="card-container">
+        <!-- Additional Manga Cards -->
+        <p-card header="Big time Rush" subheader="Pop" [style]="{ width: '300px' }">
+            <ng-template pTemplate="header">
+                <img alt="btr" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX2-EX6z6E80a7Y42IoQLZZpFqVlNh8hdWRa5xmiuuLkhmeEplOxJqR15JdW40zFBpB2o&usqp=CAU" />
+            </ng-template>
+        </p-card>
+
+        <p-card header="AC-DC" subheader="Heave Metal - rock" [style]="{ width: '290px' }">
+            <ng-template pTemplate="header">
+                <img alt="Sailor Moon" src="https://cdn-images.dzcdn.net/images/cover/de48d988a82fc401f4b9bafc2639f7d0/0x1900-000000-80-0-0.jpg" />
+            </ng-template>
+        </p-card>
+
+        <p-card header="Michael jackson" subheader="pop-Dance-Electronca" [style]="{ width: '290px' }">
+            <ng-template pTemplate="header">
+                <img alt="One Piece" src="https://cdn-images.dzcdn.net/images/cover/fb0a49a91ab8137ec9d028c4dbb04021/0x1900-000000-80-0-0.jpg" />
+            </ng-template>
+        </p-card>
+
+        <p-card header="Scorpions" subheader="Rock" [style]="{ width: '290px' }">
+            <ng-template pTemplate="header">
+                <img alt="Escorpions" src="https://i.scdn.co/image/e8604ff6b9dc2fa390b807ee208b4544bda31a99" />
+            </ng-template>
+        </p-card>
+
+        <p-card header="Maluma" subheader="Pop" [style]="{ width: '300px' }">
+            <ng-template pTemplate="header">
+                <img alt="Maluma" src="https://www.lanacion.com.ar/resizer/v2/maluma-volvio-a-tener-redes-sociales-y-se-sincero-ZYSJOWXS7NGVRE6D67HPGSQOOM.jpg?auth=539b63b01222a1a2799199451ef219ba09a4431224c9b2d61b524cbc1d54f116&width=420&height=280&quality=70&smart=true" />
+            </ng-template>
+        </p-card>
+
+        <p-card header="Shakira" subheader="La Oscuridad del Medioevo" [style]="{ width: '310px' }">
+            <ng-template pTemplate="header">
+                <img alt="shakira" src="https://www.dondeir.com/wp-content/uploads/2024/04/shakira-revela-las-primeras-fechas-de-su-proximo-tour-2024-2025.jpg" />
+            </ng-template>
+        </p-card>
+
+        <p-card header="Marshmello" subheader="Electronica" [style]="{ width: '280px' }">
+            <ng-template pTemplate="header">
+                <img alt="marshmello" src="data:image/jpeg;base64,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" />
+            </ng-template>
+        </p-card>
+
+        <p-card header="Julio Jaramillo" subheader="Bolero-pasillo-vals-tango" [style]="{ width: '300px' }">
+            <ng-template pTemplate="header">
+                <img alt="julio jaramillo" src="https://quiteñisimo.com/wp-content/uploads/2021/12/1962-Caraquenita-Julio-Jaramillo-inscrito.jpg" />
+            </ng-template>
+        </p-card>
+    </div>
+</div>
+
+<header>
+    <h1></h1>
+</header><br><br>
+
+    <div class="carousel-container">
+        <p-carousel [value]="images" [numVisible]="1" [numScroll]="1" [responsiveOptions]="responsiveOptions" 
+                    [circular]="true" [autoplay]="true" [autoplayInterval]="3000">
+            <ng-template pTemplate="item" let-item>
+                <div class="carousel-item">
+                    <img [src]="item" alt="Musica" />
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
+
+    <header>
+        <h1></h1>
+    </header>
+
+    <div class="form-container">
+        <h2>Iniciar seción</h2>
+        <form>
+            <div class="form-group">
+                <label for="firstName">Nombre:</label>
+                <input type="text" id="firstName" placeholder="Ingresa tu nombre" />
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Apellido:</label>
+                <input type="text" id="lastName" placeholder="Ingresa tus apellidos" />
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo:</label>
+                <input type="email" id="email" placeholder="Ingresa tu correo electrónico" />
+            </div>
+
+            <div class="form-group">
+                <label for="genre">Genero</label>
+                <select id="genre">
+                    <option value="">No Prefiro Decirlo</option>
+                    <option value="shonen">Musculino</option>
+                    <option value="shojo">Femenino</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <header>
+        <h1></h1>
+    </header>
+
+    <div class="gif-container" style="text-align: center; margin-top: 20px;">
+        <img src="https://i.gifer.com/DmR7.gif" alt="The Beatlles" style="max-width: 100%; height: auto;" />
+    </div>
+    <br>
+    <header>
+        <p style="color: white;">&#169;Musica. Todos los derechos reservados.</p>
+    </header><br><br>
+    
+    <script>
+        const images = [
+            'https://img.freepik.com/fotos-premium/equipo-conceptos-entretenimiento-vida-nocturna-dj-auriculares-jovenes_488220-5157.jpg',
+            'https://media.istockphoto.com/id/1391884768/es/vector/concierto-de-m%C3%BAsicos-de-banda-alternativos-con-siluetas-de-multitudes.jpg?s=612x612&w=0&k=20&c=YXJ3-BFykzOXxE1nsbyj_RJ8FTg2NtVf3Wi2lkqas7s=',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcLzK4Ic3XyEBxWFMF_e3uWsg2i4M7jr8SjA&s'
+        ];
+
+        const responsiveOptions = [
+            { breakpoint: '1024px', numVisible: 3, numScroll: 1 },
+            { breakpoint: '768px', numVisible: 2, numScroll: 1 },
+            { breakpoint: '480px', numVisible: 1, numScroll: 1 }
+        ];
+        
+    </script>
+</body>
+
+</html>

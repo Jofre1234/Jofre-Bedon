@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Pagina Web - Tu Sitio Web</title>
+  
+  <!-- Descripción para SEO -->
+  <meta name="description" content="Bienvenido a nuestro sitio web, donde encontrarás productos y servicios increíbles.">
+  
+  <!-- Enlaces a redes sociales (si es necesario) -->
+  <meta property="og:title" content="Pagina Web - Tu Sitio Web">
+  <meta property="og:description" content="Explora nuestros productos y servicios.">
+  <meta property="og:image" content="path_to_image.jpg">
+  <meta property="og:url" content="https://www.tusitioweb.com">
+
+  <!-- Establecer el icono de la página -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+  <!-- Optimización de fuentes y estilos -->
+  <link rel="stylesheet" href="styles.css"> <!-- Si tienes un archivo CSS externo -->
+
+  <!-- Evitar que el navegador realice un precacheo innecesario de la app Angular -->
+  <base href="/">
+  
+  <!-- Agregar una etiqueta para un archivo de manifiesto de la PWA (si aplica) -->
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Etiquetas para el manejo de accesibilidad -->
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Tu Nombre o Empresa">
+</head>
+
+<body>
+  <!-- Elemento raíz de Angular -->
+  <app-root></app-root>
+
+  <!-- Incluir scripts JS de manera optimizada -->
+  <script src="runtime.js" defer></script>
+  <script src="polyfills.js" defer></script>
+  <script src="main.js" defer></script>
+</body>
+
+</html>
